@@ -22,10 +22,6 @@ if (initialHash) scrollToId(initialHash)
 app.mount()
 
 router.on('after', ({ previousDocument, location }) => {
-  document.head.replaceChild(
-    previousDocument.getElementById('style'),
-    document.getElementById('style')
-  )
   document.title = previousDocument.title
   window.history.pushState({}, '', location)
 

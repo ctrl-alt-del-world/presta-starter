@@ -1,6 +1,6 @@
 import { document } from 'presta/document'
 
-const name = `midway marketing`
+const name = `presta starter`
 
 export const pages = 'src/pages/**/*.js'
 
@@ -9,11 +9,10 @@ export function createDocument (ctx) {
     foot: {
       script: [{ src: '/client.js' }]
     },
-    image,
     head: {
       og: {
         site_name: name,
-        url: `https://midway.ctrlaltdel.world/${ctx.pathname}`,
+        url: `https://website.com/${ctx.pathname}`,
       },
       twitter: {
         site_name: name,
